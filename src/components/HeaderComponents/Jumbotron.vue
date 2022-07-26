@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-wrap">
-          <h1 class="text-bold text-light">Drive with Avada</h1>
+          <h1 class="text-bold text-light fw-bold">Drive with Avada</h1>
           <p class="text-light">
             We offer the finest driving tuition money can buy
           </p>
