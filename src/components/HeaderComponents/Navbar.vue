@@ -16,12 +16,19 @@
     <div class="nav-bar">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 d-flex justify-content-around">
+            <img
+              src="../../assets/siteAssets/avada-drivers-logo-2x-300x58.png"
+              alt="logo"
+            />
             <ul>
               <li v-for="(navBarEl, index) in navBarVoices" :key="index">
-                <a href="">{{navBarEl.button}}</a>
+                <a class="text-uppercase fw-bold" href="">{{
+                  navBarEl.button
+                }}</a>
               </li>
             </ul>
+            <button class="btn btn-success text-uppercase">book now</button>
           </div>
         </div>
       </div>
@@ -65,12 +72,30 @@ export default {
 </script>
 
 <style lang="scss">
-ul{
-  list-style: none;
+.up-nav-bar {
+  background-color: #484848;
 
-  li{
-    display: inline-block;
+  span {
+    color: #e5e8eb;
   }
 }
 
+.nav-bar {
+
+background-color: #484848;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 1.5rem;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}
 </style>
