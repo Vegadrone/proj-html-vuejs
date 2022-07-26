@@ -18,7 +18,9 @@
         <div class="row">
           <div class="col-12">
             <ul v-for="(navBarEl, index) in navBarVoices" :key="index">
-              <li>{{navBarEl.button}}</li>
+              <li>
+                <a href="">{{navBarEl.button}}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,5 +64,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+ul{
+  list-style: none;
+
+  li{
+    display: inline;
+  }
+}
+
 </style>
