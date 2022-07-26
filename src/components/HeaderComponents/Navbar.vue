@@ -23,7 +23,7 @@
             />
             <ul>
               <li v-for="(navBarEl, index) in navBarVoices" :key="index">
-                <a class="text-uppercase fw-bold" href="">{{
+                <a class="text-uppercase fw-bold" :href="navBarEl.link">{{
                   navBarEl.button
                 }}</a>
               </li>

@@ -13,7 +13,7 @@
               inventore a ullam dolor saepe itaque, ut, reprehenderit labore voluptate nam voluptatem harum error!</p>
         </div>
         <div class="col-6">
-
+          <Form/>
         </div>
       </div>
     </div>
