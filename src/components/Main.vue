@@ -36,15 +36,20 @@
       </div>
     </div>
    </section>
+   <section class="services">
+    <Services /> 
+   </section>
   </main>
 </template>
 
 <script>
 import Form from "./MainComponents/Form.vue";
+import Services from "./MainComponents/Services.vue"
 
 export default {
   components: {
     Form,
+    Services,
   },
 };
 </script>
@@ -52,6 +57,12 @@ export default {
 <style lang="scss">
 .learn-to-drive-today {
   background-image: url("../assets/siteAssets/horizontal-cta-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services{
+  background-image: url("../assets/siteAssets/promise-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
