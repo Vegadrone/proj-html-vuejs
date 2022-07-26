@@ -1,6 +1,7 @@
 <template>
   <main>
-    <div class="container">
+   <section class="get-behind-the-wheel">
+     <div class="container">
       <div class="row">
         <div class="col-6">
           <h2 class="fw-bold mt-5">Get Behind The Wheel</h2>
@@ -17,20 +18,41 @@
         </div>
       </div>
     </div>
+   </section>
+   <section class="learn-to-drive-today">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 p-3">
+          <h2 class="text-light fw-bold">Start Learning to Drive Today</h2>
+          <p class="text-light fw-bold">Give us a call to schedule your first driving lesson</p>
+        </div>
+        <div class="col-6 p-3">
+          <!-- this thing is copy pasted from header navbar, think of it -->
+          <span class="text-light fs-3">
+            <i class="fa-solid fa-phone-flip t"></i>
+            1-800-555-555
+          </span>
+          </div>
+      </div>
+    </div>
+   </section>
   </main>
 </template>
 
 <script>
-import Form from "./MainComponents/Form.vue"
+import Form from "./MainComponents/Form.vue";
 
 export default {
-    components: {
+  components: {
     Form,
   },
-
-}
+};
 </script>
 
-<style>
-
+<style lang="scss">
+.learn-to-drive-today {
+  background-image: url("../assets/siteAssets/horizontal-cta-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
