@@ -17,8 +17,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <ul v-for="(navBarEl, index) in navBarVoices" :key="index">
-              <li>
+            <ul>
+              <li v-for="(navBarEl, index) in navBarVoices" :key="index">
                 <a href="">{{navBarEl.button}}</a>
               </li>
             </ul>
@@ -69,7 +69,7 @@ ul{
   list-style: none;
 
   li{
-    display: inline;
+    display: inline-block;
   }
 }
 
