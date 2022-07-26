@@ -1,8 +1,5 @@
 <template>
   <header>
-    <h1 class="text-uppercase fw-bold">
-        header
-    </h1>
     <Navbar />
     <Jumbotron />
   </header>
