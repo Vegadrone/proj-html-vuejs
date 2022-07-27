@@ -37,19 +37,19 @@
     </div>
    </section>
    <section class="services">
-    <Services /> 
+  
    </section>
   </main>
 </template>
 
 <script>
 import Form from "./MainComponents/Form.vue";
-import Services from "./MainComponents/Services.vue"
+
 
 export default {
   components: {
     Form,
-    Services,
+   
   },
 };
 </script>
