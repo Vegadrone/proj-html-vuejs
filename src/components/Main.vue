@@ -63,7 +63,13 @@
       </div>
     </section>
     <section class="instructors">
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <Instructors />
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -71,6 +77,7 @@
 <script>
 import Form from "./MainComponents/Form.vue";
 import Services from "./MainComponents/Services.vue";
+import Instructors from "./MainComponents/Instructors.vue"
 import SquareCard from "./MainComponents/SquareCard.vue";
 
 export default {
@@ -96,7 +103,9 @@ export default {
   components: {
     Form,
     Services,
+    Instructors,
     SquareCard,
+
   },
 };
 </script>
