@@ -57,6 +57,9 @@
     <section class="testimonials">
       <Testimonials />
     </section>
+    <section class="latest-news">
+      <LatestNews />
+    </section>
   </main>
 </template>
 
@@ -66,6 +69,7 @@ import Services from "./MainComponents/Services.vue";
 import Rate from "./MainComponents/Rate.vue";
 import Instructors from "./MainComponents/Instructors.vue";
 import Testimonials from "./MainComponents/Testimonials.vue";
+import LatestNews from "./MainComponents/LatestNews.vue";
 
 export default {
 
@@ -75,6 +79,7 @@ export default {
     Rate,
     Instructors,
     Testimonials,
+    LatestNews,
   },
 };
 </script>
@@ -95,6 +100,12 @@ export default {
 
 .testimonials{
   background-image: url("../assets/siteAssets/testimonial-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-news{
+  background-image: url("../assets/siteAssets/latestnews-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
