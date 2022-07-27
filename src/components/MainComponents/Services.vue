@@ -20,13 +20,12 @@
         </div>
       </div>
       <div class="col-9 d-flex justify-content-around">
-        <CoursesCard
-          v-for="(card, index) in coursesCardEl"
+        <ServiceCard
+          v-for="(card, index) in serviceCardEl"
           :key="index"
-          :img="card.imgPath"
-          :name="card.serviceName"
-          :imgAlt="card.imgAlt"
-          :button="card.btn"
+          :imgPath="card.imgPath"
+          :serviceName="card.serviceName"
+          :buttonText="card.btn"
         />
       </div>
     </div>
@@ -34,33 +33,30 @@
 </template>
 
 <script>
-import CoursesCard from "./CoursesCard.vue";
+import ServiceCard from "./ServiceCard.vue";
 
 export default {
 
     components:{
-        CoursesCard
+        ServiceCard
     },
 
     data: function () {
     return {
-      coursesCardEl: [
+      serviceCardEl: [
         {
           serviceName: "Pass Plus",
-          imgPath: "../../assets/siteAssets/courses-passplus-200x200.jpg",
-          imgAlt: "courses-passplus-200x200.jpg",
+          imgPath: "courses-passplus-200x200.jpg",
           btn: "learn more",
         },
         {
           serviceName: "Intensive Course",
-          imgPath: "../../assets/siteAssets/course-intensive-200x200.jpg",
-          imgAlt: "course-intensive-200x200.jpg",
+          imgPath: "course-intensive-200x200.jpg",
           btn: "learn more",
         },
         {
           serviceName: "Instructors",
-          imgPath: "../../assets/siteAssets/courses-instructor-200x200.jpg",
-          imgAlt: "courses-instructor-200x200.jpg",
+          imgPath: "courses-instructor-200x200.jpg",
           btn: "learn more",
         },
       ],
@@ -69,6 +65,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  .course-card {
+    border: 2px solid black;
+  }
 
 </style>
