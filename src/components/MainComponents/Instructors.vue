@@ -15,14 +15,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
+      <div class="col-4 d-flex text-center">
         <SquareCard
           v-for="(instructorCardEl, index) in instructorsCardsElements"
           :key="index"
-          :img="img"
-          :name="name"
-          :socials="socials"
-          :text="text"
+          :img="instructorCardEl.img"
+          :name="instructorCardEl.name"
+          :text="instructorCardEl.text"
         />
       </div>
     </div>
@@ -60,5 +59,5 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 </style>

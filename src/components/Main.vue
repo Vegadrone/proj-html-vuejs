@@ -49,27 +49,10 @@
       <Services />
     </section>
     <section class="rate">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex justify-content-between">
-            <SquareCard class="square-card"
-              v-for="(element, index) in rateSecElements"
-              :key="index"
-              :percentRate="element.percentRate"
-              :rateType="element.rateType"
-            />
-          </div>
-        </div>
-      </div>
+      <Rate />
     </section>
     <section class="instructors">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <Instructors />
-          </div>
-        </div>
-      </div>
+     <Instructors />
     </section>
   </main>
 </template>
@@ -77,32 +60,17 @@
 <script>
 import Form from "./MainComponents/Form.vue";
 import Services from "./MainComponents/Services.vue";
+import Rate from "./MainComponents/Rate.vue"
 import Instructors from "./MainComponents/Instructors.vue"
 import SquareCard from "./MainComponents/SquareCard.vue";
 
+
 export default {
-  data: function () {
-    return {
-      rateSecElements: [
-        {
-          percentRate: "95%",
-          rateType: "pass rate",
-        },
-        {
-          percentRate: "100%",
-          rateType: "referral rate",
-        },
-        {
-          percentRate: "0%",
-          rateType: "accident rate",
-        },
-      ],
-    };
-  },
 
   components: {
     Form,
     Services,
+    Rate,
     Instructors,
     SquareCard,
 

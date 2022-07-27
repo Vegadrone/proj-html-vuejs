@@ -1,7 +1,20 @@
 <template>
   <div class="square-wrapper">
-    <h1 class="text-center">{{percentRate}}</h1>
-    <p class="text-center">{{rateType}}</p>
+    <div class="rate-card">
+      <h1 class="text-center">{{ percentRate }}</h1>
+      <p class="text-center">{{ rateType }}</p>
+    </div>
+    <div class="instructors-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img :src="require(`../../assets/siteAssets/${img}`)" :alt="img" />
+            <h6 class="fw-bold">{{ name }}</h6>
+            <p>{{ text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,12 +23,15 @@ export default {
   props: {
     percentRate: String,
     rateType: String,
+    img: String,
+    name: String,
+    text: String,
   },
 };
 </script>
 
 <style lang="scss">
-    .square-wrapper{
-        border: 2px solid black;
-    }
+.square-wrapper {
+  border: 2px solid black;
+}
 </style>
