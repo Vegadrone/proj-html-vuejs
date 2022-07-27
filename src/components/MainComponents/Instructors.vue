@@ -16,8 +16,14 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <SquareCard v-for="(instructorCardEl, index) in instructorsCardsElements" :key="index"
-        :img="img"/>
+        <SquareCard
+          v-for="(instructorCardEl, index) in instructorsCardsElements"
+          :key="index"
+          :img="img"
+          :name="name"
+          :socials="socials"
+          :text="text"
+        />
       </div>
     </div>
   </div>
@@ -36,18 +42,34 @@ export default {
         {
           img: "instructor-mikehart-400x254.jpg",
           name: "Mike Hart",
-          socials:[<i class="fa-brands fa-facebook-f"></i>, <i class="fa-brands fa-twitter"></i>, <i class="fa-brands fa-instagram"></i>],
-          text:"Lorem ipsum dolor sit amet, consecutur adipiscing elit"
+          socials: [
+            <i class="fa-brands fa-facebook-f"></i>,
+            <i class="fa-brands fa-twitter"></i>,
+            <i class="fa-brands fa-instagram"></i>,
+          ],
+          text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
         {
           img: "instructor-johnsmith-400x254.jpg",
           name: "John Smith",
-          text:"Lorem ipsum dolor sit amet, consecutur adipiscing elit"
+          socials: [
+            <i class="fa-brands fa-facebook-f"></i>,
+            <i class="fa-brands fa-twitter"></i>,
+            <i class="fa-brands fa-instagram"></i>,
+          ],
+
+          text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
         {
           img: "instructor-angelahart-400x254.jpg",
           name: "Angela Hart",
-            text:"Lorem ipsum dolor sit amet, consecutur adipiscing elit"
+          socials: [
+            <i class="fa-brands fa-facebook-f"></i>,
+            <i class="fa-brands fa-twitter"></i>,
+            <i class="fa-brands fa-instagram"></i>,
+          ],
+
+          text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
       ],
     };
