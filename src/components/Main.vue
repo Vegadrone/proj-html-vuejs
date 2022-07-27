@@ -54,16 +54,18 @@
     <section class="instructors">
      <Instructors />
     </section>
+    <section class="testimonials">
+      <Testimonials />
+    </section>
   </main>
 </template>
 
 <script>
 import Form from "./MainComponents/Form.vue";
 import Services from "./MainComponents/Services.vue";
-import Rate from "./MainComponents/Rate.vue"
-import Instructors from "./MainComponents/Instructors.vue"
-import SquareCard from "./MainComponents/SquareCard.vue";
-
+import Rate from "./MainComponents/Rate.vue";
+import Instructors from "./MainComponents/Instructors.vue";
+import Testimonials from "./MainComponents/Testimonials.vue";
 
 export default {
 
@@ -72,13 +74,13 @@ export default {
     Services,
     Rate,
     Instructors,
-    SquareCard,
-
+    Testimonials,
   },
 };
 </script>
 
 <style lang="scss">
+
 .learn-to-drive-today {
   background-image: url("../assets/siteAssets/horizontal-cta-background.jpg");
   background-repeat: no-repeat;
@@ -87,6 +89,12 @@ export default {
 
 .services {
   background-image: url("../assets/siteAssets/promise-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials{
+  background-image: url("../assets/siteAssets/testimonial-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

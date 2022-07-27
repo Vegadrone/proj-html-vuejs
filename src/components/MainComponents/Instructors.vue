@@ -31,6 +31,7 @@
 <script>
 import SquareCard from "./SquareCard.vue";
 export default {
+  name:"Insctructors",
   components: {
     SquareCard,
   },
