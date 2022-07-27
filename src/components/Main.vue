@@ -39,18 +39,29 @@
    <section class="services">
     <Services />
    </section>
+   <section class="rate">
+    <SquareCard />
+   </section>
   </main>
 </template>
 
 <script>
 import Form from "./MainComponents/Form.vue";
 import Services from "./MainComponents/Services.vue";
+import SquareCard from "./MainComponents/SquareCard.vue"
 
 
 export default {
+  data: function(){
+    return{
+      rateSecEl
+    }
+  },
+
   components: {
     Form,
-    Services
+    Services,
+    SquareCard,
    
   },
 };

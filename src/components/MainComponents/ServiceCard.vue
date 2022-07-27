@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="service-card">
     <img :src="require(`../../assets/siteAssets/${imgPath}`)" :alt="imgPath">
-    <h3 class="fw-bold">{{serviceName}}</h3>
+    <h6>{{serviceName}}</h6>
     <button class="btn btn-success">{{buttonText}}</button>
   </div>
 </template>
@@ -19,5 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .service-card{
+    border:2px solid black
+  }
 </style>
