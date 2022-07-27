@@ -42,33 +42,16 @@ export default {
         {
           img: "instructor-mikehart-400x254.jpg",
           name: "Mike Hart",
-          socials: [
-            <i class="fa-brands fa-facebook-f"></i>,
-            <i class="fa-brands fa-twitter"></i>,
-            <i class="fa-brands fa-instagram"></i>,
-          ],
           text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
         {
           img: "instructor-johnsmith-400x254.jpg",
           name: "John Smith",
-          socials: [
-            <i class="fa-brands fa-facebook-f"></i>,
-            <i class="fa-brands fa-twitter"></i>,
-            <i class="fa-brands fa-instagram"></i>,
-          ],
-
           text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
         {
           img: "instructor-angelahart-400x254.jpg",
           name: "Angela Hart",
-          socials: [
-            <i class="fa-brands fa-facebook-f"></i>,
-            <i class="fa-brands fa-twitter"></i>,
-            <i class="fa-brands fa-instagram"></i>,
-          ],
-
           text: "Lorem ipsum dolor sit amet, consecutur adipiscing elit",
         },
       ],
