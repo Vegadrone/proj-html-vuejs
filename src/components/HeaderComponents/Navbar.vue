@@ -82,7 +82,7 @@ nav {
   width: 100%;
 
   .up-nav-bar {
-    background-color:$navBgColor;
+    background-color: $navBgColor;
 
     span {
       color: $secondaryColor;

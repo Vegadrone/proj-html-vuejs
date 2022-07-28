@@ -52,13 +52,16 @@
       <Rate />
     </section>
     <section class="instructors">
-     <Instructors />
+      <Instructors />
     </section>
     <section class="testimonials">
       <Testimonials />
     </section>
     <section class="latest-news">
       <LatestNews />
+    </section>
+    <section class="newsletter">
+      <Newsletter />
     </section>
   </main>
 </template>
@@ -70,8 +73,10 @@ import Rate from "./MainComponents/Rate.vue";
 import Instructors from "./MainComponents/Instructors.vue";
 import Testimonials from "./MainComponents/Testimonials.vue";
 import LatestNews from "./MainComponents/LatestNews.vue";
+import Newsletter from "./MainComponents/Newsletter.vue";
 
 export default {
+  name: "Main",
 
   components: {
     Form,
@@ -80,12 +85,12 @@ export default {
     Instructors,
     Testimonials,
     LatestNews,
+    Newsletter,
   },
 };
 </script>
 
 <style lang="scss">
-
 .learn-to-drive-today {
   background-image: url("../assets/siteAssets/horizontal-cta-background.jpg");
   background-repeat: no-repeat;
@@ -98,19 +103,25 @@ export default {
   background-size: cover;
 }
 
-.testimonials{
+.testimonials {
   background-image: url("../assets/siteAssets/testimonial-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.latest-news{
+.latest-news {
   background-image: url("../assets/siteAssets/latestnews-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.square-card{
-  width: calc( (100% /3) - 2rem);
+.newsletter {
+  background-image: url("../assets/siteAssets/newsletter_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.square-card {
+  width: calc((100% / 3) - 2rem);
 }
 </style>
