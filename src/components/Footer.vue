@@ -31,7 +31,6 @@ export default {
 
   .socials-bar{
     background-color: $footerBgColor ;
-    height: 100px;
-    width: 100%;
+    padding: 1rem 0rem;
   }
 </style>
