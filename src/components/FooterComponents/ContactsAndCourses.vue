@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-between">
-        <div class="img-container">
+        <div class="brand">
           <img
             src="../../assets/siteAssets/avada-drivers-logo-1x.png"
             alt="logo"
@@ -10,16 +10,12 @@
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
             alias fugiat ad sit fugit minus, quibusdam dignissimos nemo
-            cupiditate explicabo, quos eligendi fuga! Maxime fugiat iusto beatae
-            soluta ipsam expedita? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Recusandae adipisci id, vero nostrum debitis
-            dolores accusamus illum libero. Accusamus, autem. Iste repudiandae
-            fugit maiores sed dignissimos eveniet molestiae ex nostrum!
+            cupiditate explicabo, quos eligendi fuga! Maxime fugiat iusto beatae.
           </p>
         </div>
 
         <div>
-          <h4 class="text-light fw-bold text-uppercase">contacts</h4>
+          <h4 class="text-light text-uppercase">contacts</h4>
           <ul
             v-for="contactsMenuVoice in contactsMenuVoices"
             :key="contactsMenuVoice.id"
@@ -30,7 +26,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-light fw-bold text-uppercase">courses</h4>
+          <h4 class="text-light text-uppercase">courses</h4>
 
           <ul
             class="courses-voices"
@@ -109,7 +105,11 @@ p {
 
 ul {
   list-style: none;
-  
+  padding:0;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+
+
   .courses-voices {
     color: $brandColor;
   }
@@ -117,5 +117,16 @@ ul {
   .contacts-voices {
     color: $secondaryColor;
   }
+}
+
+.brand{
+    width: 15rem;
+    font-size: 0.8rem;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 </style>

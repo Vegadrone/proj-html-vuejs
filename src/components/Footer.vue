@@ -27,6 +27,7 @@ export default {
   background-image: url("../assets/siteAssets/footer-background-color.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3rem 0rem;
   }
 
   .socials-bar{

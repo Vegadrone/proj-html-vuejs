@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <img :src="require(`../../assets/siteAssets/${img}`)" :alt="img">
-    <h2>{{ title }}</h2>
+  <div class="d-flex flex-column align-items-between text-center">
+    <div class="news-img">
+      <img class="w-100" :src="require(`../../assets/siteAssets/${img}`)" :alt="img">
+    </div>
+    <h4>{{ title }}</h4>
     <div>
         <span>{{date}}</span> | <span>{{comments}}</span>
     </div>
@@ -23,5 +25,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../../style/variables.scss";
+
+.news-img{
+  width: 15rem;
+}
+
+h4{
+ color:$brandColor;
+}
 </style>

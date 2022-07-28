@@ -4,7 +4,7 @@
       <div class="col-10">
         <h2 class="fw-bold text-center">Latest News</h2>
       </div>
-      <div class="col-10 d-flex">
+      <div class="col-10 d-flex justify-content-around">
         <NewsCard
           v-for="(newsElement, index) in newsElements"
           :key="index"

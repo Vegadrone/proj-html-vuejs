@@ -119,6 +119,7 @@ export default {
   background-image: url("../assets/siteAssets/newsletter_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 4rem 0rem;
 }
 
 .square-card {
