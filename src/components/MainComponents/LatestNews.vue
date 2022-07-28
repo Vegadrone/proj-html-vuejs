@@ -15,7 +15,7 @@
           :text="newsElement.text"
         />
       </div>
-      <button class="btn btn-success text-uppercase">more from the blog</button>
+      <button class="btn btn-success text-uppercase w-50 my-4">more from the blog</button>
     </div>
   </div>
 </template>
