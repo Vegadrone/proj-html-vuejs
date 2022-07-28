@@ -17,10 +17,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex justify-content-around">
-            <img
-              src="../../assets/siteAssets/avada-drivers-logo-2x-300x58.png"
-              alt="logo"
-            />
+            <div class="img-container">
+              <img
+                src="../../assets/siteAssets/avada-drivers-logo-2x-300x58.png"
+                alt="logo"
+              />
+            </div>
             <ul>
               <li v-for="(navBarEl, index) in navBarVoices" :key="index">
                 <a class="text-uppercase fw-bold" :href="navBarEl.link">{{
@@ -72,28 +74,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.up-nav-bar {
-  background-color: #484848;
+@import "../../style/variables.scss";
 
-  span {
-    color: #e5e8eb;
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  .up-nav-bar {
+    background-color:$navBgColor;
+
+    span {
+      color: $secondaryColor;
+    }
   }
-}
+  .nav-bar {
+    background-color: rgba($color: $navBgColor, $alpha: 0.5);
+    padding: 0.8rem 0rem;
 
-.nav-bar {
+    .img-container {
+      width: 15rem;
+      img {
+        margin-top: 0.7rem;
+        width: 100%;
+      }
+    }
 
-background-color: #484848;
+    ul {
+      list-style: none;
 
-  ul {
-    list-style: none;
+      li {
+        display: inline-block;
+        padding: 1.5rem;
 
-    li {
-      display: inline-block;
-      padding: 1.5rem;
-
-      a {
-        color: #ffffff;
-        text-decoration: none;
+        a {
+          color: $menuTextColor;
+          text-decoration: none;
+        }
       }
     }
   }

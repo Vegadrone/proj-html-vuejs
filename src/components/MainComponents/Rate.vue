@@ -4,7 +4,7 @@
       <div class="col-12 d-flex justify-content-between">
         <SquareCard
           class="square-card"
-          v-for="(element, index) in rateSecElements"
+          v-for="(element, index) in rateElements"
           :key="index"
           :percentRate="element.percentRate"
           :rateType="element.rateType"
@@ -26,7 +26,7 @@ export default {
 
   data: function () {
     return {
-      rateSecElements: [
+      rateElements: [
         {
           percentRate: "95%",
           rateType: "pass rate",
